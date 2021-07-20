@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h3>This is the ContentPage!</h1>
+    <h4>Oops! Looks like your username had issues with the constraints!</h2>
+    <h5>Sorry, here are the requirements you failed: </h3>
+    <ul>
+        {% for error in errors %}
+        <li> {{error}} </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

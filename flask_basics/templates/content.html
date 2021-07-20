@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h3>This is the ContentPage!</h1>
+    <h4>Thanks for signing up! {{first}} {{last}}</h2>
+    <h5>Congrats, your username passed all three requirements.</h3>
+    <a href="{{url_for('static', filename='bluebg.png')}}">Click for a view!</a>
+</div>
+{% endblock %}
